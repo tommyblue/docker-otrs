@@ -3,7 +3,7 @@ MAINTAINER Tommaso Visconti <tommaso.visconti@gmail.com>
 ENV DEBIAN_FRONTEND noninteractive
 ENV ROOT_PWD s3cr3t
 
-RUN apt-get -qq update && apt-get install -y wget apache2 supervisor openssh-server pwgen libcrypt-ssleay-perl libencode-hanextra-perl libgd-gd2-perl libgd-text-perl libgd-graph-perl libjson-xs-perl liblwp-useragent-determined-perl libmail-imapclient-perl libapache2-mod-perl2 libnet-dns-perl libnet-ldap-perl libpdf-api2-perl libtext-csv-xs-perl libxml-parser-perl libyaml-perl libcrypt-eksblowfish-perl libyaml-libyaml-perl libnet-ldap-perl
+RUN apt-get -qq update && apt-get install -y wget apache2 supervisor openssh-server pwgen libcrypt-ssleay-perl libencode-hanextra-perl libgd-gd2-perl libgd-text-perl libgd-graph-perl libjson-xs-perl liblwp-useragent-determined-perl libmail-imapclient-perl libapache2-mod-perl2 libnet-dns-perl libnet-ldap-perl libpdf-api2-perl libtext-csv-xs-perl libxml-parser-perl libyaml-perl libcrypt-eksblowfish-perl libyaml-libyaml-perl libnet-ldap-perl mysql-client
 
 # Supervisor
 RUN mkdir -p /var/log/supervisor
