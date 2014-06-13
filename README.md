@@ -1,4 +1,6 @@
-# OTRS
+# OTRS Help Desk Software as Docker container
+
+With this repository you can build a Docker image running OTRS with ITSM extension
 
 ## Using an external MySQL server
 
