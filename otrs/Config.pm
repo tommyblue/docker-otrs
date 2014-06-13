@@ -64,6 +64,8 @@ sub Load {
 
   # $Self->{DatabaseDSN} = "DBI:Oracle:sid=OTRS;host=$Self->{DatabaseHost};port=1522;";
 
+  $Self->{SecureMode} = '1';
+
   # ---------------------------------------------------- #
   # fs root directory
   # ---------------------------------------------------- #
