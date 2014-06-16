@@ -46,6 +46,8 @@ docker run -d -p 80 -p 22 -v /<some_place>/mysql:/var/lib/mysql <my name>/otrs
 
 ## Access
 
+With `docker ps` check the host port mapping the port `80` of the container, in this example is `49154`.
+
 * **Url:** http://localhost:49154/otrs/index.pl
 * **Username:** root@localhost
 * **Password:** c5g4v8Q2TT7aSpLk
