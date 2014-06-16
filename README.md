@@ -46,7 +46,7 @@ docker run -d -p 80 -p 22 -v /<some_place>/mysql:/var/lib/mysql <my name>/otrs
 
 ## Access
 
-With `docker ps` check the host port mapping the port `80` of the container, in this example is `49154`.
+With `docker ps` check the host's port mapping the port `80` of the container, in this example is `49154`.
 
 * **Url:** http://localhost:49154/otrs/index.pl
 * **Username:** root@localhost
@@ -119,7 +119,7 @@ If you need the FAQ module, sign in to OTRS and go to "Admin > Package Manager" 
 ## Troubleshooting
 
 If you get an "Internal server error" at any moment with OTRS, probably is a permission problem. You can check `/var/log/apache/error.log` to be sure.
-In this case just this command (run as root) will probably fix the problem:
+In this case the following command (run as root) will probably fix the problem:
 
 ```
 cd /opt/otrs/bin && ./otrs.SetPermissions.pl /opt/otrs --otrs-user=otrsserviceuser --otrs-group=nogroup --web-user=www-data --web-group=www-data
